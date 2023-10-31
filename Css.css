@@ -1,0 +1,80 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: #d8e6e9;
+}
+
+.game{
+    width:100vh;
+    height:70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border:1px solid #000000;
+    margin: 100px;
+}
+
+#dino{
+    width: 100px;
+    height:70px;
+    background-image: url(./Assests/dino.png);
+    background-size: auto 70px;
+    background-repeat: no-repeat;
+     position: relative;
+    top: 143px;
+}
+
+.jump{
+    animation: jump 0.3s linear;
+}
+
+@keyframes jump{
+       0%{
+        top: 143px;
+       }
+       30%{
+        top:115px;
+       }
+       50%{
+          top:70px;
+       }
+       80%{
+        top:115px
+       }
+
+       100%{
+        top:100px;
+       }
+}
+
+#cactus{
+    width:40px;
+    height:40px;
+    position: relative;
+   /* top:91px;
+    left:580px;*/
+    background-image: url(./Assests/cactus.png);
+    background-size: 20px 40px;
+    animation: cactus-block 1.2s infinite linear;
+    margin:0px;
+}  
+
+@keyframes cactus-block{
+    0%{
+        left:600px;
+    }
+    100%{
+        left: -20px;
+    }
+}
+
+.footer{
+    align-items: center;
+}
+
+.navbar{
+    align-items: center;
+}
